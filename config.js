@@ -5,18 +5,18 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/co
 //═══════[Required Variables]════════\\
 global.audio= "" ;  
 global.video= "" ;
-global.devs = "923184474176"
+global.devs = "254768827492"
 global.port =process.env.PORT
 global.appUrl=process.env.APP_URL||""                       // put your app url here,
 global.email="samsamsun789@gmail.com"
-global.location="Lahore,Punjab,Pakistan"
+global.location="Nairobi,Kenya"
 global.mongodb= process.env.MONGODB_URI || ""
 global.DATABASE_URI=process.env.DATABASE_URL
 global.allowJids= process.env.ALLOW_JID || "null" 
 global.blockJids= process.env.BLOCK_JID || "120363023983262391@g.us"
 global.scan = "https://suhail-md-vtsf.onrender.com/";
-global.timezone= process.env.TZ || process.env.TIME_ZONE || "Asia/Karachi";
-global.github=process.env.GITHUB|| "https://github.com/SuhailTechInfo/Suhail-Md";
+global.timezone= process.env.TZ || process.env.TIME_ZONE || "Africa/Nairobi";
+global.github=process.env.GITHUB|| "https://github.com/SuhailTechInfo/Suhail-M";
 global.gurl = process.env.GURL  || "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643";
 global.website =process.env.GURL|| "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643" ; 
 global.THUMB_IMAGE=process.env.THUMB_IMAGE|| "https://telegra.ph/file/d5b1c3544fedc23e11a06.jpg" ; // SET LOGO FOR IMAGE 
@@ -25,11 +25,11 @@ global.THUMB_IMAGE=process.env.THUMB_IMAGE|| "https://telegra.ph/file/d5b1c3544f
 
 
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923184474176";
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "254768827492";
 
 module.exports = {
 
-  menu: process.env.MENU || "", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
+  menu: process.env.MENU || "1", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
   style:process.env.STYLE|| "2",  // put '1' & "2" here to check bot styles
 
 
@@ -55,7 +55,7 @@ module.exports = {
   KOYEB_API: process.env.KOYEB_API  || "false",
 readmessage:process.env.READ_MESSAGE|| "false",
  aitts_Voice_Id:process.env.AITTS_ID|| "37",
- alwaysonline:process.env.WAPRESENCE|| "unavailable", // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
+ alwaysonline:process.env.WAPRESENCE|| "composing", // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
  
 
   REMOVE_BG_KEY : process.env.REMOVE_BG_KEY || "",
